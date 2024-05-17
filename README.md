@@ -1,1 +1,1 @@
-This reposity shows how to do Data Analysis with Polars on the New York Taxi Dataset.
+Este repositorio muestra como utilizar polars para hacer Data Analysis sobre el New York Taxi Dataset.
