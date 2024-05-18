@@ -66,7 +66,6 @@ jupyterlab_pygments==0.3.0
 jupyterlab_server==2.25.4
 jupyterlab_widgets==3.0.10
 kiwisolver==1.4.5
-lightgbm @ file:///Users/nicolaepopescul/Desktop/code/LightGBM/dist/lightgbm-4.3.0.99-py3-none-macosx_14_0_arm64.whl#sha256=1b0d5a98ba6e2434a7746f9f5ef0b1d626843980d1ea64805b9538b4bd2c8904
 linkify-it-py==2.0.3
 Markdown==3.6
 markdown-it-py==3.0.0
