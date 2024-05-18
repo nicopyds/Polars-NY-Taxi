@@ -1,5 +1,5 @@
 import os
-import urllib
+from urllib.request import urlretrieve
 
 import multiprocessing as mp
 
@@ -69,7 +69,7 @@ def download_file(t):
     folder_path, url = t
     basename = os.path.join(folder_path, extract_basename(url = url))
     
-    urllib.request.urlretrieve(url = url, filename = basename)
+    urlretrieve(url = url, filename = basename)
 
 iterable = list(zip([PATH_INPUT_FOLDER for i in range(len(FILES_TO_DOWNLOAD))], FILES_TO_DOWNLOAD))
 cpu_cores = mp.cpu_count() - 2
