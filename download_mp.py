@@ -78,6 +78,10 @@ make_input_folder(folder_path = PATH_INPUT_FOLDER)
 
 if __name__ == "__main__":
 
-    pool = mp.get_context(method="fork").Pool(processes = cpu_cores)
+    # para aquellos que usan Windows
+    # es mejor dejar el código
+    # sin el get_context
+    # mp.Pool(processes = cpu_cores)
+    pool = mp.Pool(processes = cpu_cores)
     pool.map(func = download_file, iterable = iterable)
     pool.close()
